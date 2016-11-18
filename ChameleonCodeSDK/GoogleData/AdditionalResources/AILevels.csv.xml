@@ -14,6 +14,13 @@
     <Description>Wins, prevents a win or plays randomly.</Description>
   </AILevel>
   <AILevel>
+    <Name>Intermediate</Name>
+    <PlayerType>SimpleRules</PlayerType>
+    <MinAILevelIndex>0</MinAILevelIndex>
+    <AILevelIndex>2</AILevelIndex>
+    <Description>Looks 1 move ahead and also follows all beginner rules.</Description>
+  </AILevel>
+  <AILevel>
     <Name>Advanced</Name>
     <PlayerType>SimpleRules</PlayerType>
     <MinAILevelIndex>0</MinAILevelIndex>

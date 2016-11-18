@@ -16,6 +16,13 @@
         "IsWinPattern": "TRUE"
       },
       {
+        "Name": "DiagonalWin",
+        "Description": "Starting with the top-left to bottom-right diagonal, a single rotation finds both diagonal winning positions.",
+        "Cells": "00;40;80;",
+        "Translations": "10;",
+        "IsWinPattern": "TRUE"
+      },
+      {
         "Name": "TwoInARowTop",
         "Description": "Two marks top left, top middle with top right empty - and then a full rotation/flip scheme.",
         "Cells": "00;10;22;",

@@ -5,7 +5,7 @@
         "Id": "0",
         "Name": "Rotate",
         "Description": {
-          "#cdata-section": "Rotate 3x3 \"board\" 90 degrees LEFT-hand (CCounter LOCKWISE) around the middle cell"
+          "#cdata-section": "Rotate 3x3 \"board\" 90 degrees RIGHT-hand (CLOCKWISE) around the middle cell"
         }
       },
       {

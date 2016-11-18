@@ -3,8 +3,8 @@
     "LanguageToken": [
       {
         "Token": "Title",
-        "DisplayName": "Ben's Tic Tac Toe",
-        "FRDisplayName": "Ben's Tic Tac Toe"
+        "DisplayName": "3x3 Tic Tac Toe",
+        "FRDisplayName": "3x3 Tic Tac Toe"
       },
       {
         "Token": "GameOn",

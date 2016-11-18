@@ -16,6 +16,13 @@
         "Description": "Wins, prevents a win or plays randomly."
       },
       {
+        "Name": "Intermediate",
+        "PlayerType": "SimpleRules",
+        "MinAILevelIndex": "0",
+        "AILevelIndex": "2",
+        "Description": "Looks 1 move ahead and also follows all beginner rules."
+      },
+      {
         "Name": "Advanced",
         "PlayerType": "SimpleRules",
         "MinAILevelIndex": "0",

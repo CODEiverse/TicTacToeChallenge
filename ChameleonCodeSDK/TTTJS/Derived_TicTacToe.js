@@ -31,20 +31,20 @@ function addDerivedCode(newBoard) {
     // TRANSLATION FUNCTION: 
     // Rotate
     // Description: 
-    // Rotate 3x3 "board" 90 degrees LEFT-hand (CCounter LOCKWISE) around the middle cell
+    // Rotate 3x3 "board" 90 degrees RIGHT-hand (CLOCKWISE) around the middle cell
     // ***************************************************************************************************
     newBoard.rotate = function () {
         var tempValues = [];
         var b = this;
         
-        tempValues[TopLeftCell] = b.values[TopRightCell];  // MOVE TopRight to the TopLeft
-        tempValues[TopCell] = b.values[MiddleRightCell];  // MOVE MiddleRight to the Top
-        tempValues[TopRightCell] = b.values[BottomRightCell];  // MOVE BottomRight to the TopRight
-        tempValues[MiddleLeftCell] = b.values[TopCell];  // MOVE Top to the MiddleLeft
-        tempValues[MiddleRightCell] = b.values[BottomCell];  // MOVE Bottom to the MiddleRight
-        tempValues[BottomLeftCell] = b.values[TopLeftCell];  // MOVE TopLeft to the BottomLeft
-        tempValues[BottomCell] = b.values[MiddleLeftCell];  // MOVE MiddleLeft to the Bottom
-        tempValues[BottomRightCell] = b.values[BottomLeftCell];  // MOVE BottomLeft to the BottomRight
+        tempValues[TopLeftCell] = b.values[BottomLeftCell];  // MOVE BottomLeft to the TopLeft
+        tempValues[TopCell] = b.values[MiddleLeftCell];  // MOVE MiddleLeft to the Top
+        tempValues[TopRightCell] = b.values[TopLeftCell];  // MOVE TopLeft to the TopRight
+        tempValues[MiddleLeftCell] = b.values[BottomCell];  // MOVE Bottom to the MiddleLeft
+        tempValues[MiddleRightCell] = b.values[TopCell];  // MOVE Top to the MiddleRight
+        tempValues[BottomLeftCell] = b.values[BottomRightCell];  // MOVE BottomRight to the BottomLeft
+        tempValues[BottomCell] = b.values[MiddleRightCell];  // MOVE MiddleRight to the Bottom
+        tempValues[BottomRightCell] = b.values[TopRightCell];  // MOVE TopRight to the BottomRight
         for (var i = 0; i < 9; i++) {
             if (tempValues[i]) b.values[i] = tempValues[i];
         }
@@ -91,6 +91,15 @@ function addDerivedCode(newBoard) {
         else return true;
     }
     
+
+    newBoard.checkDiagonalWinStep = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[TopLeftCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomRightCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
     newBoard.checkEdgeWin = function () {
         var testBoard = this;
         var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
@@ -125,6 +134,19 @@ function addDerivedCode(newBoard) {
         return false;
     }
     
+    newBoard.checkDiagonalWin = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkDiagonalWinStep(testBoard, cellStateToFind)) return true;
+        // Rotate the test board to try another test...
+        testBoard.rotate();
+        // Check for a match...
+        if (testBoard.checkDiagonalWinStep(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
 
     newBoard.checkForWin = function () {
         console.log(newBoard);
@@ -132,6 +154,7 @@ function addDerivedCode(newBoard) {
 
         if (testBoard.checkEdgeWin()) return true;
         else if (testBoard.checkMiddleWin()) return true;
+        else if (testBoard.checkDiagonalWin()) return true;
         
         else return false;
     }
