@@ -8,6 +8,7 @@
     <FontColor>white</FontColor>
     <DefaultMark>X</DefaultMark>
     <Cursor>Default</Cursor>
+    <SortOrder>1</SortOrder>
   </CellState>
   <CellState>
     <Name>Them</Name>
@@ -18,6 +19,7 @@
     <FontColor>white</FontColor>
     <DefaultMark>O</DefaultMark>
     <Cursor>Default</Cursor>
+    <SortOrder>2</SortOrder>
   </CellState>
   <CellState>
     <Name>NoOne</Name>
@@ -27,5 +29,6 @@
     <Color>white</Color>
     <FontColor>darkgray</FontColor>
     <Cursor>Pointer</Cursor>
+    <SortOrder>3</SortOrder>
   </CellState>
 </CellStates>

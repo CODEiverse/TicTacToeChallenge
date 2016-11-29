@@ -12,6 +12,7 @@
     <Y>0</Y>
     <TestTranslation>6</TestTranslation>
     <TestTranslationSample>g</TestTranslationSample>
+    <SortOrder>0</SortOrder>
   </Cell>
   <Cell>
     <Name>Top</Name>
@@ -26,6 +27,7 @@
     <Y>1</Y>
     <TestTranslation>3</TestTranslation>
     <TestTranslationSample>d</TestTranslationSample>
+    <SortOrder>1</SortOrder>
   </Cell>
   <Cell>
     <Name>TopRight</Name>
@@ -40,6 +42,7 @@
     <Y>2</Y>
     <TestTranslation>0</TestTranslation>
     <TestTranslationSample>A</TestTranslationSample>
+    <SortOrder>2</SortOrder>
   </Cell>
   <Cell>
     <Name>MiddleLeft</Name>
@@ -54,6 +57,7 @@
     <Y>0</Y>
     <TestTranslation>7</TestTranslation>
     <TestTranslationSample>h</TestTranslationSample>
+    <SortOrder>3</SortOrder>
   </Cell>
   <Cell>
     <Name>Middle</Name>
@@ -68,6 +72,7 @@
     <Y>1</Y>
     <TestTranslation>4</TestTranslation>
     <TestTranslationSample>e</TestTranslationSample>
+    <SortOrder>4</SortOrder>
   </Cell>
   <Cell>
     <Name>MiddleRight</Name>
@@ -82,6 +87,7 @@
     <Y>2</Y>
     <TestTranslation>1</TestTranslation>
     <TestTranslationSample>B</TestTranslationSample>
+    <SortOrder>5</SortOrder>
   </Cell>
   <Cell>
     <Name>BottomLeft</Name>
@@ -96,6 +102,7 @@
     <Y>0</Y>
     <TestTranslation>8</TestTranslation>
     <TestTranslationSample>i</TestTranslationSample>
+    <SortOrder>6</SortOrder>
   </Cell>
   <Cell>
     <Name>Bottom</Name>
@@ -110,6 +117,7 @@
     <Y>1</Y>
     <TestTranslation>5</TestTranslation>
     <TestTranslationSample>f</TestTranslationSample>
+    <SortOrder>7</SortOrder>
   </Cell>
   <Cell>
     <Name>BottomRight</Name>
@@ -124,5 +132,6 @@
     <Y>2</Y>
     <TestTranslation>2</TestTranslation>
     <TestTranslationSample>C</TestTranslationSample>
+    <SortOrder>8</SortOrder>
   </Cell>
 </Cells>
