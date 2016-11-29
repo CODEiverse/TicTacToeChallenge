@@ -9,7 +9,8 @@
         "Color": "red",
         "FontColor": "white",
         "DefaultMark": "X",
-        "Cursor": "Default"
+        "Cursor": "Default",
+        "SortOrder": "1"
       },
       {
         "Name": "Them",
@@ -19,7 +20,8 @@
         "Color": "black",
         "FontColor": "white",
         "DefaultMark": "O",
-        "Cursor": "Default"
+        "Cursor": "Default",
+        "SortOrder": "2"
       },
       {
         "Name": "NoOne",
@@ -28,7 +30,8 @@
         "Description": "The space has not yet been played in",
         "Color": "white",
         "FontColor": "darkgray",
-        "Cursor": "Pointer"
+        "Cursor": "Pointer",
+        "SortOrder": "3"
       }
     ]
   }
